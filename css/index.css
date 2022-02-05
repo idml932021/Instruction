@@ -1,0 +1,622 @@
+/* =================  GLOBAL =================== */
+html,body{
+    font-family: 'Work Sans', sans-serif; 
+}
+body p{
+    font-size: 0.9rem;
+    line-height: 1.8em;
+    color: #999;
+}
+body a{
+    text-decoration: none;
+    transition: all .5s;
+}
+body h2, h3,h6{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sectionPadding{
+    padding: 5rem 0;
+}
+body button{
+    transition: all .5s;
+}
+.heading__section{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.heading__section h2{
+    color: #ff4f81;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: .5;
+}
+.heading__section p{
+    font-size: 1.06rem;
+    letter-spacing: 4px;
+    color: black;
+    text-transform: capitalize;
+}
+.heading__section p::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    margin: 20px auto;
+}
+.section--padding{
+    padding: 5rem 0;
+}
+/* ============== HEADER =============== */
+.header__top{
+    padding: 8px 15px;
+    background-color: #ff4f81
+}
+.header__top a{
+    color: white;
+    font-size: 0.875rem;
+    
+}
+.header__top a:hover{
+    color: black;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+}
+.header__top {
+    display: flex;
+    text-align: right;
+}
+.header__right {
+    margin-left: auto;
+}
+.header__social i{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    line-height: 30px;
+    text-align: center;
+    transition: all .5s;
+    margin-left: 4px;
+}
+.header__social i:hover{
+    border-color: white;
+}
+.header__bottom{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.header__bottom .navbar-brand i{
+    transform: skewX(-10deg);
+}
+.header__bottom .navbar-brand p{
+    font-size: 2.25rem;
+    color: black;
+}
+.header__bottom .navbar-brand p:last-child{
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+    color: #ff4f81;
+}
+
+#navbarInstruction .nav-item{
+    font-size: 0.875rem;
+    margin: 0 15px;
+}
+
+#navbarInstruction .nav-link{
+    padding: 8px;
+    color: black;
+    transition: all .5s ;
+}
+#navbarInstruction .nav-item.active .nav-link{
+    color: #ff4f81;
+}
+#navbarInstruction .nav-item:hover .nav-link{
+    color: #ff4f81;
+}
+
+#navbarInstruction .nav-item::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #ff4f81;
+    transition: all .5s;
+}
+#navbarInstruction .nav-item:hover::after{
+    width: 100%;
+}
+#navbarInstruction .nav-item.active::after{
+    width: 100%;
+}
+#navbarInstruction .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+    min-width: 9rem;
+}
+.dropdown-item{
+    padding: 4px 24px;
+    color: white;
+    text-transform: none;
+    transition: all .5s;
+    
+}
+.dropdown-item:hover{
+    background-color: transparent;
+    color: #ff4f81;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* ============== CAROUSEL ================ */
+.instructionCarousel .carousel__content{
+    position: relative;
+}
+.instructionCarousel .carousel-caption{
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.instructionCarousel .carousel-caption h5{
+    font-size: 3.25rem;
+}
+
+.instructionCarousel .carousel-caption p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8em;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-bottom: 25px; 
+    color: white;
+}
+.instructionCarousel .carousel-caption button{
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.instructionCarousel .carousel-caption button:hover{
+    border-color: #ff4f81;
+    background-color: #ff4f81;
+}
+/* =============== WELCOME =============== */
+.welcome__content{
+    width: 80%;
+}
+.welcome__content .border-col {
+    border: 1px solid black;
+    padding: 32px;
+}
+.welcome__item i{
+    font-size: 2rem;
+}
+.offer__col{
+    padding:15px
+}
+.welcome__item h3{
+    margin: 1rem 0;
+    color: #ff4f81;
+    font-size: 1.8rem;
+    text-transform: none;
+}
+.welcome__item h6{
+    margin-top: 1rem 0 0.2rem;
+}
+.welcome__item p{
+    font-size: 0.93rem;
+}
+/* ================ OUR STATS =================*/
+.our{
+    background: url("../img/banner2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.our__content{
+    text-align: center;
+}
+.our__item i{
+    font-size: 2.5rem;
+    color: white;
+}
+.our__item h5{
+    color: #ff4f81;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 30px 0 20px;
+}
+.our__item p{
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* OFFER */
+
+.offer__content .col-4{
+    padding: 15px;
+}
+.offer__item{
+    box-shadow: 0px 1px 8px 0px rgb(158 158 158 / 75%);
+    padding: 25px 40px;
+    text-align: center;
+    
+    transition: all .5s;
+
+}
+.offer__item i{
+    font-size: 2.5rem;
+    color: #ff4f81;
+}
+.offer__item h3{
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 25px 0 20px;
+}
+.offer__item p{
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+.offer__item:hover{
+    background-color: #12ccc3;
+}
+
+/* FEEDBACK */
+.feedback{
+    background: url("../img/banner3.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.feedback__content{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 1px 7px #8e8e8e;
+}
+.feedback__content .item{
+    padding: 16px;
+}
+.feedback__content .item img{
+    width: 28%;
+}
+.feedback__top{
+    background-color: rgba(0, 0, 0, 0.47);
+    border-radius: 5px;
+    position: relative;
+}
+.feedback__top::after{
+    content: '';
+    border-top: 9px solid rgba(0, 0, 0, 0.47);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 35%;
+}
+.feedback__top p{
+    padding: 16px 24px;
+    margin-bottom: 1rem;
+    color: white;    
+    font-size: 1rem;
+    line-height:1.5;
+}
+.feedback__bottom{
+    width: 55%;
+    margin: 2rem auto;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.feedback__name{
+    margin-left: 5px;
+}
+.feedback__name p{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5;
+}
+.feedback__name p:last-child{
+    color: #ff4f81;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+.feedback__content .owl-theme .owl-dots .owl-dot span{
+    background-color: #ff4f81;
+    opacity: 0.5;
+}
+.feedback__content .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #ff4f81;
+    opacity: 1;
+}
+/* ======================= NEW ======================  */
+.new__content{
+    text-align: left;
+}
+.new__content img{
+    max-width: 100%;
+}
+.new__content .col-5, .col-7{
+    padding: 15px;
+}
+.new__content a, h3{
+    font-size: 1.2rem;
+    color: black;
+}
+.new__content h4{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff4f81;
+    margin: 16px 0;
+    letter-spacing: 1px;
+}
+.new__content p{
+    margin-top: 1rem;
+}
+
+/* MODAL */
+#instrucModal .modal-dialog{
+    max-width: 600px;
+}
+#instrucModal h6 {
+    color: #ff4f81;
+    font-size: 29px;
+}
+#instrucModal img{
+    max-width: 100%;
+
+}
+#instrucModal p{
+    padding: 20px 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.8em;
+}
+
+/* ================ FOOTER ================= */
+footer{
+    background-color: #141415;
+    padding-top: 5rem;
+    letter-spacing: 1px;
+}
+.footer__top h3{
+    font-size: 24px;
+    color: #ff4f81;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+.footer__top p{
+    font-size: 15px;
+    line-height: 2em;
+    margin-bottom: 2rem;
+    color: #8b8b96;
+}
+.footer__top .footer__link{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.footer__top .footer__link i{
+    color: #ff4f81;
+    margin-right: 1rem;
+}
+
+.footer__top a{
+    color: #8b8b96;
+    font-size: 15px;
+}
+.footer__top .footer__link a:hover{
+    color: white;
+}
+.contact__item{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.contact__item i{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #4b4b50;
+    color: white;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 16px;
+}
+.footer__form{
+    margin: 48px 0 16px;
+}
+.footer__form form{
+    display: flex;
+    align-items: center;
+}
+.footer__form .form__col label{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4f81;
+    letter-spacing: 1px;
+}
+.footer__form .form__col{
+    padding: 0 5px;
+}
+.footer__form .form__col input{
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #888;
+    height: auto;
+    outline: none;
+}
+.footer__form .form__col input:focus{
+    box-shadow: 0 0 0 0.14rem rgb(0 123 255 / 25%);
+}
+.footer__form .form__col button{
+    padding: 12px 40px;
+    margin-left: 14px ;
+    background-color: #ff4f81;
+    box-shadow: 0 0 0 0.09rem rgb(0 123 255 / 10%);
+    color: white;
+}
+.footer__form .form__col button:hover{
+    background-color: #ec1955;
+}
+.footer__bottom{
+    padding: 16px;
+    text-align: center;
+    background-color: #0f0f10;
+}
+.footer__bottom p{
+    margin-bottom: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: white;
+}
+.footer__bottom a{
+    color: red;
+}
+.footer__bottom a:hover{
+    color: white;
+}
+
+/* *************************** RESPONSIVE ************************** */
+
+@media screen and (max-width:1199.98px){
+    /* carousel */
+    .instructionCarousel .carousel-caption{
+        top: 50%;
+    }
+    .instructionCarousel .carousel-caption h5{
+        font-size: 4vw;
+    }
+    .instructionCarousel .carousel-caption p{
+        font-size: 1.6vw;
+        margin-bottom: 0.5em;
+    }
+    .instructionCarousel .carousel-caption button{
+        font-size: 1.5vw;
+        padding: 0.8em 1em;
+    }
+}
+
+@media screen and (max-width:767.98px){
+    /* header */
+    .navbar-light .navbar-toggler {
+        background-color: black;
+        color: #ff4f81;
+        border-radius: 0;
+    }
+    #navbarInstruction .nav-item{
+        margin: 0 15px;
+    }
+    .header__bottom .container-fluid{
+        background-color: white;
+    }
+    #navbarInstruction .navbar-nav{
+        background-color: #eee ;
+    }
+    #navbarInstruction .dropdown-menu{
+        background-color: #e0e1e2;
+        border-color: #e0e1e2; 
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-item{
+        color: black;
+    }
+    
+    #navbarInstruction .dropdown-item:hover{
+        color: #ff4f81;
+    }
+
+}
+
+@media screen and (max-width:575.98px){
+    /* global */
+    .heading__section p{
+        padding: 0 15px;
+    }
+    /* Header */
+    .header__left a{
+        display:block;
+    }
+
+}
+@media screen and (max-width:515px){
+   .footer__form .form__col input, .footer__form .form__col button{
+     font-size: 14px;
+       padding: 10px;
+   } 
+}
+@media screen and (max-width:450px){
+    /* carousel */
+    #carouselExampleCaptions{
+        height: 250px;
+    }
+    #carouselExampleCaptions .carousel-inner, #carouselExampleCaptions .carousel-item ,#carouselExampleCaptions .carousel-item img{
+        height: 100%;
+    }
+    #carouselExampleCaptions .carousel-item img{
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (max-width:376px){
+    .feedback__bottom{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px){
+    /* header */
+    .header__right {
+        width: 35%;
+    }
+    .header__social i{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:991.98px){
+    /* Header */
+    #navbarInstruction .nav-item{
+        font-size: 12px;
+        padding: 2px;
+        margin: 0 15px;
+    }
+    #navbarInstruction .nav-link{
+        padding: 5px;
+    }
+    .header__bottom .navbar-brand p:first-child{
+        font-size: 3vw;
+    }
+    .header__bottom .navbar-brand p:last-child{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width:486px) and (max-width:767.98px){
+
+    /* Carousel */
+    .feedback__bottom{
+        width: 80%;
+    }
+}
